@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Carlos Mijail</title>
+    <link rel="stylesheet" href="front/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#quien-soy" onclick="mostrarSeccion('quien-soy')">¿Quién soy?</a></li>
+                <li><a href="#skills" onclick="mostrarSeccion('skills')">Skills</a></li>
+                <li><a href="#experiencia" onclick="mostrarSeccion('experiencia')">Experiencia</a></li>
+                <li><a href="#contactame" onclick="mostrarSeccion('contactame')">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quien-soy" class="seccion activa">
+            <h1>¿Quién soy?</h1>
+            <p>Soy Carlos Mijail Mamani Anccasi, estudiante de ingeniería de software de 8vo semestre en la Universidad La Salle de Arequipa. Apasionado por el desarrollo de software móvil, web y de escritorio.</p>
+        </section>
+        <section id="skills" class="seccion">
+            <h1>Skills</h1>
+            <div class="categorias">
+                <h2>Tecnologías</h2>
+                <ul>
+                    <li>HTML5, CSS, JavaScript</li>
+                    <li>Python, Java, Kotlin</li>
+                    <li>C, C++</li>
+                </ul>
+                <h2>Herramientas</h2>
+                <ul>
+                    <li>Git, GitHub</li>
+                    <li>MySQL, PostgreSQL, SQLite</li>
+                    <li>Vue, Flask, Django, React</li>
+                </ul>
+                <h2>Habilidades Blandas</h2>
+                <ul>
+                    <li>Liderazgo, Responsabilidad</li>
+                    <li>Puntualidad, Comunicación</li>
+                </ul>
+            </div>
+        </section>
+        <section id="experiencia" class="seccion">
+            <h1>Experiencia</h1>
+            <ul>
+                <li>Desarrollador independiente:</li>
+                <ul>
+                    <li>MentoriaApp: Aplicación móvil para mentoring.</li>
+                    <li>TPago: Billetera virtual similar a Yape.</li>
+                    <li>SisAcad: Sistema de carga académica web.</li>
+                    <li>WisBrain: Digitalización de un test cognitivo.</li>
+                </ul>
+                <li>Mentor en el programa de mentoría de mi universidad.</li>
+            </ul>
+        </section>
+        <section id="contactame" class="seccion">
+            <h1>Contáctame</h1>
+            <form id="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/CharlsMikhail" title="GitHub" target="_blank" rel="noopener noreferrer">
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:cmamania@gmail.com" title="Gmail" target="_blank" rel="noopener noreferrer">
+                <span>Gmail</span>
+            </a>
+            <a href="https://www.linkedin.com/in/carlos-mijail-mamani-anccasi-49ba19234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1lCvkOS_zBiQwgk66ovlcnqXMdzOeYJd6/view?usp=sharing" title="Currículum" target="_blank" rel="noopener noreferrer">
+                <span>CV</span>
+            </a>
+            
+        </div>
+        <p>Derechos reservados © CRAM</p>
+    </footer>
+    <script src="back/main.js"></script>
+</body>
+</html>

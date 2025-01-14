@@ -1,0 +1,97 @@
+/* Estructura básica para que el footer esté pegado abajo */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: #00ff00;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header ul li a:hover {
+    background-color: #00ff00;
+    color: #000000;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1; /* Para que el contenido principal ocupe el espacio disponible */
+    padding: 20px;
+}
+
+.seccion {
+    display: none;
+}
+
+.seccion.activa {
+    display: block;
+}
+
+footer {
+    background-color: #000000;
+    color: #00ff00;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    color: #00ff00;
+    text-decoration: none;
+    border: 2px solid #00ff00;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer .social-icons a:hover {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+button[type="submit"] {
+    background-color: #000000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00ff00;
+    color: #000000;
+}
